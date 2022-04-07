@@ -11,15 +11,10 @@
     "domain": "''"
   },
   "scripts": {
-    "ambiente": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./debug/SetarAmbienteLocal.ps1",
     "dev": "ts-node-dev --inspect --respawn --transpile-only src/server.ts",
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "postbuild": "shx cp package*json dist/ && shx cp .env* dist/",
     "prod": "node dist/server.js",
-    "sam:build": "sam build",
-    "sam:package": "sam package --s3-bucket $npm_package_config_s3BucketName --s3-prefix $npm_package_name --region $npm_package_config_region",
-    "sam:deploy": "cross-var sam deploy --stack-name $npm_package_config_cloudFormationStackName --capabilities CAPABILITY_IAM --s3-bucket $npm_package_config_s3BucketName --s3-prefix $npm_package_name --parameter-overrides DomainName=$npm_package_config_domain --region $npm_package_config_region --no-fail-on-empty-changeset",
-    "package-deploy": "npm run build && npm run sam:build && npm run sam:deploy",
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix"
   },
