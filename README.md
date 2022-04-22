@@ -1,23 +1,14 @@
-# Api-typescript-aws-lambda-template
+# REST-Api-typescript-template
 
 # Introduction
 
-API template
+REST API typescript template
 
-# Getting Started
 
-1. Nodejs 14+, Typescript, Powershell (para debug local)
-2. 
+## Funcionalidades
 
-# Build and Test
+- Eslint, Babel, Prittier and TS basic configs
+- Jest and Supetest basic configs
+- Routes, Services and Repositories and providers imple sample
+- Multiplataforma
 
-1. Criar ambiente:
-
-```
-npm run ambiente
-```
-
-# Notas
-
-1.
-2.

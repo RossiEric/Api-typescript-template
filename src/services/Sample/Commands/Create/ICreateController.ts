@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { CreateCase } from "./ICreateCase";
 
-export class CreateChamadoController {
+export class CreateController {
   constructor(private createCase: CreateCase) {}
 
   async handle(request: Request, response: Response): Promise<Response> {

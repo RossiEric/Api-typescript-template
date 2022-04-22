@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import app from "./app";
 
 dotenv.config({
-  path: process.env.NODE_ENV === "Dev" ? ".env.dev" : process.env.NODE_ENV === "Prod" ? ".env.prod" : ".env",
+  path: ".env",
 });
 
 const port = process.env.APP_PORT;
