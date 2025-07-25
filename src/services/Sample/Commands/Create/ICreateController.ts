@@ -6,7 +6,7 @@ export class CreateController {
 
   async handle(request: Request, response: Response): Promise<Response> {
     try {
-      const data = await this.createCase.execute(request);
+      const data = await this.createCase.execute(request.body);
 
       return response.status(201).json(data);
     } catch (err) {
