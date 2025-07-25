@@ -6,7 +6,7 @@ REST API typescript template
 
 ## Funcionalidades
 
-- Eslint, Babel, Prittier and TS basic configs
-- Jest and Supetest basic configs
+- Eslint, Babel, Prettier and TS basic configs
+- Jest and Supertest basic configs
 - Routes, Services and Repositories and providers sample
 
