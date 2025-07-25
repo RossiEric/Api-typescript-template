@@ -14,5 +14,5 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*"] /* considera typescript apenas o que está em /src, para o jest.config.js não dar erro */
+  "include": ["src/**/*"] /* only consider TypeScript files under /src so jest.config.js works */
 }
